@@ -1,0 +1,132 @@
+/* .carousel {
+  width: 100%;
+}
+.carousel img {
+  width: 100%;
+} */
+.slick-slide {
+  width: 100%;
+}
+.slick-dots {
+  list-style-type: none;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+}
+.slick-dots button {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  color: transparent;
+  background-color: transparent;
+  line-height: 0%;
+  outline: none;
+  border: none;
+}
+.slick-dots button::before {
+  content: '•';
+  width: 25px;
+  height: 25px;
+  font-size: 32px;
+  line-height: 36px;
+  cursor: pointer;
+  color: #ccc;
+}
+.slick-active button::before {
+  color: rgb(27, 13, 13);
+}
+.home-section {
+  padding: 5% 8% 0;
+}
+.section-heading {
+  font-size: 28px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-card {
+  width: 19%;
+  margin: 0.5%;
+  margin-top: 0;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px #ccc;
+  border-radius: 5px;
+}
+.product-card:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+.product-image {
+  width: 100%;
+}
+.product-details {
+  box-sizing: border-box;
+  padding: 12px 16px;
+}
+.product-details h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: rgb(27, 25, 25);
+}
+.product-details h5 {
+  margin: 0;
+  margin-top: 8px;
+  color: rgb(110, 110, 110);
+}
+.product-details p {
+  margin: 0;
+  margin-top: 8px;
+  font-weight: 600;
+  color: #009688;
+}
+@media (max-width: 600px) {
+  .carousel {
+    width: 100%;
+    max-width: 600px;
+  }
+  .carousel img {
+    width: 100%;
+  }
+
+  .home-section {
+    padding-top: 12%;
+    margin-top: -10%;
+  }
+
+  .slick-dots button::before {
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .section-heading {
+    font-size: 24px;
+  }
+  .product-grid {
+    flex-direction: column;
+  }
+  .product-image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 124px;
+    border-radius: 5px 0 0 5px;
+  }
+  .product-card {
+    width: 100%;
+    display: flex;
+    margin-bottom: 24px;
+  }
+  .product-details {
+    padding: 20px;
+  }
+  .product-details h5 {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
